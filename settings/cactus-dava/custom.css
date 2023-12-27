@@ -1,0 +1,46 @@
+.custom-container {
+    text-align: center;
+    margin-top: 10%; /* Используем относительные значения для отступа */
+}
+
+.custom {
+    margin-left: 12%; /* Используем относительные значения для отступа */
+    width: 80%; /* Используем относительные значения для ширины */
+    height: 50vh; /* Используем относительные значения для высоты */
+    border-radius: 25px;
+    pointer-events: none;
+    text-align: center;
+    background-image: url(/files/images/background-custom.png);
+    background-size: cover; /* Чтобы фоновое изображение занимало всю доступную ширину */
+}
+
+.custom-logo img {
+    pointer-events: none;
+    width: 20%; /* Используем относительные значения для размера логотипа */
+    max-width: 200px; /* Задаем максимальную ширину логотипа */
+}
+
+.button-custom {
+    height: 6vh; /* Используем относительные значения для высоты */
+    width: 25%; /* Используем относительные значения для ширины */
+    line-height: 6vh;
+    margin-left: 35%; /* Используем относительные значения для отступа */
+    margin-top: -5%; /* Используем относительные значения для отступа */
+    background-color: white;
+    border-radius: 15px;
+    font-family: "Ubuntu", monospace;
+    font-size: 1vw; /* Используем относительные значения для размера шрифта */
+}
+
+/* Пример медиазапроса для адаптации стилей для мобильных устройств */
+@media (max-width: 768px) {
+    .custom {
+        width: 90%;
+        height: 20vh;
+    }
+    .button-custom {
+        width: 40%;
+        margin-left: 30%;
+        font-size: 3vw;
+    }
+}
